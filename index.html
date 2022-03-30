@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <header>
+            <div class="titulo">
+                <h1>Formulário</h1>
+            </div>
+        </header>
+        <form action="/pagina-processa-dados-do-form" method="post" enctype="multipart/form-data">
+            <div>
+                <fieldset>
+                <label for="name">Nome:<br/></label>
+                <input type="text" id="name"  required/>
+            </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                <label for="mail">E-mail:<br/></label>
+                <input type="email" id="mail"  required placeholder="exemplo@exemplo.com" />
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                <label for="tel">Telefone:<br/></label>
+                <input type="tel" id="tel" required placeholder="(00)00000-0000"/>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <label for="doc">Documento:<br/></label>
+                    <input type="file" name="doc" accept="application/pdf" required/>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                <label for="msg" >Mensagem:<br/></label>
+                <textarea id="msg"></textarea>
+                </fieldset>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar sua mensagem</button>
+            </div>
+        </form>
+
+    </body>
+</html>
